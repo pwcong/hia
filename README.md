@@ -4,3 +4,6 @@
 ## Techs
 * python3
 * scrapy
+
+## Lists
+* 煎蛋妹子

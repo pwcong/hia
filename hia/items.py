@@ -8,7 +8,6 @@
 import scrapy
 
 
-class HiaItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class JiandanItem(scrapy.Item):
+    author = scrapy.Field()
+    imgs = scrapy.Field()
