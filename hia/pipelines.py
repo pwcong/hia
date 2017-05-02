@@ -14,7 +14,7 @@ class JiandanPipeline(object):
 
         if spider.name == "jiandan":
 
-            save_dir = os.path.join(os.getcwd(), "res", "jiandan")
+            save_dir = os.path.join(os.getcwd(), "fuli", "jiandan")
 
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)

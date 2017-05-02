@@ -5,5 +5,8 @@
 * python3
 * scrapy
 
-## Lists
+## Usage
 * 煎蛋妹子
+    ```
+    scrapy crawl jiandan
+    ```
