@@ -5,12 +5,14 @@ import os
 import sys
 import json
 from selenium import webdriver
-from crawler.jiandan import JiandanCrawler
 
+from crawler.jiandan import JiandanCrawler
+from crawler.mzitu import MzituCrawler
 cwd_path = os.getcwd()
 
 crawlers = {
-    'jiandan': JiandanCrawler
+    'jiandan': JiandanCrawler,
+    'mzitu': MzituCrawler
 }
 
 
@@ -28,7 +30,7 @@ def get_config():
 
     with open(config_path) as i:
         config = json.load(i)
-        print('> load configuration from ' + config_path + '\n')
+        print('\n> load configuration from ' + config_path + '\n')
         return config
 
 
@@ -53,7 +55,7 @@ def main():
 
     print('> start crawl\n')
     crawlers.get(crawler)(browser, dir_path)
-    print('> finish crawl\n')
+    print('> finish crawl')
 
 
 if __name__ == '__main__':

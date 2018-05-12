@@ -47,6 +47,6 @@ def download_files(urls, dir_path):
         try:
             download_file(url, dir_path)
             # 续一秒
-            # time.sleep(1)
+            time.sleep(1)
         except:
             pass
