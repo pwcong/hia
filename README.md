@@ -13,7 +13,7 @@
 > python main.py <crawler>
 ```
 
-## 爬虫列表
+## Crawlers
 
 * 煎蛋网：`jiandan`
 * 妹子图：`mzitu`
