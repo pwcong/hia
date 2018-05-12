@@ -1,12 +1,18 @@
 # Hia
+
 我的福利小爬虫们 (ಡωಡ) hiahiahia
 
-## Techs
-* python3
-* scrapy
+## Require(python3)
+
+* selenium (Chrome WebDriver)
+* beautifulsoup4
 
 ## Usage
-* 煎蛋妹子
-    ```
-    scrapy crawl jiandan
-    ```
+
+```shell
+> python main.py <crawler>
+```
+
+## 爬虫列表
+
+* 煎蛋网：`jiandan`

@@ -1,0 +1,6 @@
+{
+    "webDriver": {
+        "name": "Chrome",
+        "path": "C:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe"
+    }
+}
