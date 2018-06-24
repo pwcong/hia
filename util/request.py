@@ -32,11 +32,16 @@ def make_request(url, headers):
     return req
 
 
-def download_file(url, dir_path, opener = None):
+def download_file(url, dir_path, opener = None, get_filename_from_url = None):
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
 
-    file_name = url.split('/')[-1]
+    file_name = None
+    
+    if(get_filename_from_url is not None):
+        file_name = get_filename_from_url(url)
+    else:
+        file_name= url.split('/')[-1]
 
     print('> start download ' + file_name + ' from ' + url)
     if opener is not None:
@@ -51,11 +56,11 @@ def download_file(url, dir_path, opener = None):
             print('> download ' + file_name + ' successfully')
 
 
-def download_files(urls, dir_path, opener = None):
+def download_files(urls, dir_path, opener = None, get_filename_from_url = None):
     for url in urls:
         try:
-            download_file(url, dir_path, opener)
+            download_file(url, dir_path, opener, get_filename_from_url)
             # 续一秒
             time.sleep(1)
-        except:
-            pass
+        except Exception as e:
+            print(e)

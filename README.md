@@ -17,3 +17,4 @@
 
 * 煎蛋网：`jiandan`
 * 妹子图：`mzitu`
+* 喵图吧：`miaotuba`
