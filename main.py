@@ -9,13 +9,15 @@ from selenium import webdriver
 from crawler.jiandan import JiandanCrawler
 from crawler.mzitu import MzituCrawler
 from crawler.miaotuba import MiaotubaCrawler
+from crawler.pangci import PangciCrawler
 
 cwd_path = os.getcwd()
 
 crawlers = {
     'jiandan': JiandanCrawler,
     'mzitu': MzituCrawler,
-    'miaotuba': MiaotubaCrawler
+    'miaotuba': MiaotubaCrawler,
+    'pangci': PangciCrawler
 }
 
 
